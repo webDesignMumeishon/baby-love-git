@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/baby.js"></script>
+</head>
+<body>
+    <div class="imageback">
+
+        <header>
+            <h1 class="title">Test</h1>
+            <nav>
+                <a href="index.html" >Home</a>
+                <a href="momentos.html" >Momentos</a>
+                <a href="test.html" class="active">Test</a>
+            </nav>
+        </header>
+
+        <section class="test">
+            <h2 class="test">Prueba</h2>
+          <table>
+              <tr>
+                  <th scope="col">Pregunta</th><th scope="col">Tu respuesta</th><th scope="col">Validacion</th>
+              </tr>
+            <tr>
+                <td class="label_col">En que mes empezo la relacion?</td>
+                <td class="input_col"><input id="InputID1" type="text" onchange="comienzoRelacion(this);" placeholder="Mes - Ej: 'Diciembre'"></td>
+                <td class="feedback_col"><span id="respuesta1"></span ></td>
+            </tr>
+            <tr>
+                <td class="label_col">Cual es nuestro postre favorito?</td>
+                <td class="input_col"><input id="InputID2" type="text" onchange="postreFav(this);" placeholder="Postre - Ej: 'Chocolate'"></td>
+                <td class="feedback_col"><span id="respuesta2"></span ></td>
+            </tr>
+            <tr>
+                <td class="label_col">Adonde nos vamos en Diciembre?</td>
+                <td class="input_col"><input name="InputID" type="text" onchange="destino(this);" placeholder="Ciudad - Ej: 'Corrientes'"></td>
+                <td class="feedback_col"><span id="respuesta3"></span ></td>
+            </tr>
+            
+          </table>
+          <button onclick="calcuAciertos();">Calcular Aciertos</button>
+          
+        </section>
+        
+       
+
+    </div>
+    <footer>
+        <h2>&copy Muma | Propiedad de Sofia</h2>
+    </footer>
+    
+</body>
+</html>

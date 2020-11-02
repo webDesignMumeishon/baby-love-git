@@ -1,0 +1,255 @@
+/*-----------------------------Main structure-----------------------------*/
+body{
+    margin: 0px auto;
+    width: 1000px;
+    /* border: solid; */
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( #e4cbabec 10%, #e9cfcf 30%, whitesmoke);
+
+}
+
+.imageback{  
+    background-image: url("../Images/800x1200.jpg");
+    background-size: 1110px 1000px;
+    /* margin-top: -20px; */
+    width: 1000px;
+    height: 650px; 
+}
+
+h1.title{
+    text-align: center;
+    border-style: dashed;
+    border-radius: 10px;
+    width: 250px;
+    margin: 5px auto;
+    padding: 20px;
+    /*Transitions*/
+    transition-property: all;
+    transition-delay: .5s;
+    transition-duration: .5s;
+    /*Colours*/
+    background-color: rgba(255,255,255, 0.3);
+}
+h1.title:hover{
+    color: black;
+    background-color: #FADBD8;
+    transform: translateY(5mm);
+}
+
+nav{
+    width: auto;
+    margin-top: 15px;
+    text-align: center;
+    background-color: rosybrown ;
+    border-radius: 20px;
+    padding: 10px;
+}
+nav a{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: solid;
+    border-radius: 10px;
+    margin-left: 2%;
+    padding: 2%;
+    /*Transition*/
+    transition-property: all;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .5s;
+    /*Colours*/
+    background-color: rgba(255,255,255, 0.3);
+    color: whitesmoke;
+}
+nav a:hover{
+    color: black;
+    background-color: #FADBD8;
+    transform: translateY(5mm);
+}
+
+.active{
+    background-color: skyblue;
+}
+
+footer{
+    width: auto;
+    color: black;
+    /* border: solid; */
+    height: 10%;
+    background-color: whitesmoke;
+    font-style: italic;
+   
+}
+
+/*-----------------------------INDEX structure-----------------------------*/
+
+section.index img{
+    width: 250px;
+    height: 250px;
+    /* border: solid; */
+    margin-left: 17%;
+    margin-top: 5%;
+    border-radius: 10px;
+    /*Transition*/
+    transition-property: all;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .5s;
+}
+section.index img:active{
+    transform: scale(1.5,1.5);
+    border-radius: 50%;
+}
+
+section.index div span{
+    /* display: inline-block; */
+    border: solid;
+    padding: 10px;
+    margin-left: 20%;
+    border-radius: 10px;
+    float: left;
+    background-color: rgba(255,255,255, 0.3);
+    /*Transition*/
+    transition-property: all;
+    transition-delay: .2s;
+    transition-timing-function: linear;
+    transition-duration: .5s;
+}
+
+section.index img:active{
+    transform: scale(1.5,1.5);
+    border-radius: 50%;
+}
+.span1{
+    position: relative;
+    left: 8mm;
+}
+.span2{
+    position: relative;
+    left: 23mm;
+}
+
+span.tql{
+    visibility: hidden;
+    text-align: center;
+    width: 100px;
+    display: block;
+    position: relative;
+    left: -8mm;
+}
+.tequelo{   
+    margin: 0px auto;
+    text-align: center;
+    width: 100px;
+    padding: 30px;
+    clear: both;
+} 
+div.tequelo:active>.tql{
+    visibility: visible;
+    background-color: red;
+}
+
+/*-----------------------------TEST structure-----------------------------*/
+h2.test{
+        text-align: center;
+        border-radius: 10px;
+        width: 500px;
+        margin: 5px auto;
+        padding: 10px;
+        /*Colours*/
+        background-color: rgba(255,255,255, 0.3);
+}
+
+/*table style*/
+
+section table{
+    margin: 0px auto;
+    padding: 10px;
+
+    border-radius: 10px; 
+}
+
+section table th{
+    border: solid;
+    text-align: center;
+    padding: 15px;
+
+}
+
+section table tr:nth-child(odd){
+    background-color: rgba(189, 18, 18, 0.3)
+}
+
+section table td{
+    border: solid;
+    padding: 8px;
+    
+}
+
+button{
+    padding: 10px;
+    display: block ;
+    margin: 15px auto;
+}
+
+/*-----------------------------MOMENTOS structure-----------------------------*/
+
+section.pictures{
+    /* border: solid; */
+    padding: 0px;
+}
+section .ul1{
+    text-align: center;
+
+    
+}
+
+section ul li{
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    margin-left: -1mm;  
+    height: 40px;
+    line-height: 40px;
+    border-right: solid 3px;
+    background-color: #85C1E9 ;
+
+    transition-property: all;
+    transition-delay: .0s;
+    transition-timing-function: linear;
+    transition-duration: .4s;
+}
+section ul li:hover{
+    background-color: gray;
+    margin-left: none;  
+    
+}
+
+section ul li ul{
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+section li li{
+    border-right: none;
+}
+
+section li:hover ul{
+    display: block;
+
+}
+
+section li ul li{
+
+
+    display: block;
+}
+
+section ul li ul li{
+    border-bottom: solid 1px;
+    margin-left: -10mm;
+    width: 150px;
+}
+
