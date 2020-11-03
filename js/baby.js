@@ -2,7 +2,7 @@ var rtasCorrectas = 0
 
 function comienzoRelacion(para){
     let rta = para.value
-    let regex = /^junio$/gi
+    let regex = /^julio$/gi
 
     if(regex.test(rta)){
         document.getElementById("respuesta1").style.color = "green"
